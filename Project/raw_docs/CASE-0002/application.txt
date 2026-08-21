@@ -1,0 +1,11 @@
+Applicant: Michael Chen
+DOB: 1994-03-15
+Sex: Male
+Height: 5'11"  Weight: 172 lb
+Face amount: 250000
+Product: 20yr Term Life
+Occupation: Software engineer
+Tobacco: Never used
+Stated annual income: 145000
+Medical conditions disclosed: None
+Medications disclosed: None

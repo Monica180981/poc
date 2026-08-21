@@ -1,0 +1,4 @@
+Applicant: Jane Doe
+DOB: 1975-04-12
+Face amount: 500000
+Product: 20yr Term Life

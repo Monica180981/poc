@@ -1,0 +1,188 @@
+{
+  "case_id": "CASE-0005",
+  "factor_scores": [
+    {
+      "factor": "Age",
+      "raw_score": 3,
+      "band_label": "Strongly adverse band (55-60)",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "DOB 1968-11-22, current age 57"
+    },
+    {
+      "factor": "Tobacco use",
+      "raw_score": 3,
+      "band_label": "Current smoker / nicotine user",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "tobacco_use: current smoker ~1 pack/day, cotinine positive"
+    },
+    {
+      "factor": "BMI / build",
+      "raw_score": 3,
+      "band_label": "Severely outside preferred",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "height/weight 5'4\" 205 lb, BMI ~35.2"
+    },
+    {
+      "factor": "Blood pressure",
+      "raw_score": 0,
+      "band_label": "Normal / controlled",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no explicit BP readings provided"
+    },
+    {
+      "factor": "Diabetes",
+      "raw_score": 3,
+      "band_label": "Insulin-dependent or poorly controlled",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "insulin-dependent type 2 diabetes, HbA1c 9.6%"
+    },
+    {
+      "factor": "Heart disease",
+      "raw_score": 3,
+      "band_label": "Recent event / significant disease",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "recent STEMI, stents, LVEF 34%, HF hospitalization, elevated BNP"
+    },
+    {
+      "factor": "Cancer history",
+      "raw_score": 3,
+      "band_label": "Active / recurrent / metastatic",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "active breast cancer undergoing chemotherapy"
+    },
+    {
+      "factor": "Respiratory disease",
+      "raw_score": 3,
+      "band_label": "Severe or oxygen-dependent",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "severe COPD on home oxygen 2L/min"
+    },
+    {
+      "factor": "Kidney/liver disease",
+      "raw_score": 3,
+      "band_label": "Advanced / progressive disease",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "CKD stage 4, eGFR 24, creatinine 3.1"
+    },
+    {
+      "factor": "Mental health / substance use",
+      "raw_score": 2,
+      "band_label": "Recent treatment or unstable",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "DUI and alcohol-related accident suggesting possible unstable alcohol use"
+    },
+    {
+      "factor": "Medications",
+      "raw_score": 3,
+      "band_label": "Very heavy regimen with complications",
+      "weight": 1,
+      "weighted_contribution": 3,
+      "evidence_status": "assessed",
+      "basis": "extensive medication list including insulin, chemo agents, oxygen, steroids, cardiac drugs"
+    },
+    {
+      "factor": "Lab abnormalities",
+      "raw_score": 3,
+      "band_label": "Severe abnormality",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "elevated BNP 1850, low hemoglobin 9.8, creatinine 3.1"
+    },
+    {
+      "factor": "Recent hospitalization",
+      "raw_score": 3,
+      "band_label": "Recent and serious",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "2025-06 6-day inpatient stay for heart failure exacerbation"
+    },
+    {
+      "factor": "Family history",
+      "raw_score": 0,
+      "band_label": "None or irrelevant",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no family history data provided"
+    },
+    {
+      "factor": "Occupation / avocation",
+      "raw_score": 0,
+      "band_label": "Low hazard",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "occupation: retired"
+    },
+    {
+      "factor": "Driving record",
+      "raw_score": 3,
+      "band_label": "DUI / severe pattern",
+      "weight": 1,
+      "weighted_contribution": 3,
+      "evidence_status": "assessed",
+      "basis": "DUI, failure to yield, at-fault alcohol-related accident"
+    },
+    {
+      "factor": "Financial / application consistency",
+      "raw_score": 2,
+      "band_label": "Noticeable inconsistency",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "high face amount ($1M) relative to modest $40,000 pension income"
+    },
+    {
+      "factor": "APS completeness",
+      "raw_score": 2,
+      "band_label": "Several missing details",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "missing EKG/stress test, oncology restaging, income verification, substance use history"
+    },
+    {
+      "factor": "Multiple comorbidities",
+      "raw_score": 3,
+      "band_label": "Several serious conditions",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "concurrent MI, cancer, diabetes, COPD, CKD"
+    }
+  ],
+  "total_score": 102,
+  "risk_band": "Very high",
+  "suggested_action": "Strong adverse risk; likely manual escalation or decline under many guidelines.",
+  "_meta": {
+    "model": "anthropic/claude-sonnet-5",
+    "generated_at": "2026-08-18T07:15:45",
+    "framework_source": "\\\\xbiek31680dns.centralindia.cloudapp.azure.com\\Hackathon_Collab2\\Atul60176\\Project\\Underwriting_POC.xlsx",
+    "usage": {
+      "prompt_tokens": 4455,
+      "completion_tokens": 3243
+    }
+  }
+}

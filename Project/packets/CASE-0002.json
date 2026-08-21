@@ -1,0 +1,487 @@
+{
+  "case_id": "CASE-0002",
+  "product_line": "Term Life Insurance",
+  "generated_at": "2026-08-20T11:23:48",
+  "disclaimer": "This packet is an AI-assisted DRAFT for underwriter review. It is not an approval, decline, or binding decision.",
+  "summary": "Michael Chen, a 31-year-old non-smoking software engineer, is applying for a 20-year, $250,000 term life policy. Underwriting data shows normal vital signs (BP 118/76, BMI 24.0), favorable lab results (HbA1c 5.1%, LDL 92, HDL 58, Total Cholesterol 170, Creatinine 0.9), no disclosed medical conditions, and a clean driving record. No risk flags or conflicts were identified in the structured findings. Two minor information gaps remain: an unquantified alcohol consumption statement and a lack of detailed extended family medical history. Overall, the case profile appears low-risk, though the missing details should be reviewed before finalizing.",
+  "key_fields": [
+    {
+      "field": "applicant_name",
+      "value": "Michael Chen",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Applicant: Michael Chen"
+        }
+      ]
+    },
+    {
+      "field": "date_of_birth",
+      "value": "1994-03-15",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "DOB: 1994-03-15"
+        }
+      ]
+    },
+    {
+      "field": "sex",
+      "value": "Male",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Sex: Male"
+        }
+      ]
+    },
+    {
+      "field": "height_weight",
+      "value": "5'11\", 172 lb",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Height: 5'11\"  Weight: 172 lb"
+        }
+      ]
+    },
+    {
+      "field": "face_amount",
+      "value": "250000",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Face amount: 250000"
+        }
+      ]
+    },
+    {
+      "field": "product",
+      "value": "20yr Term Life",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Product: 20yr Term Life"
+        }
+      ]
+    },
+    {
+      "field": "term_length",
+      "value": "20 years",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Product: 20yr Term Life"
+        }
+      ]
+    },
+    {
+      "field": "occupation",
+      "value": "Software engineer",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Occupation: Software engineer"
+        }
+      ]
+    },
+    {
+      "field": "tobacco_use",
+      "value": "Never used / non-smoker (confirmed by negative cotinine)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Tobacco: Never used"
+        },
+        {
+          "chunk_id": "CASE-0002__aps_dr_patel.txt__000",
+          "quote": "Non-smoker; no alcohol concerns."
+        },
+        {
+          "chunk_id": "CASE-0002__labs_2025.csv__000",
+          "quote": "Cotinine,Negative,,2025-06-02"
+        }
+      ]
+    },
+    {
+      "field": "stated_annual_income",
+      "value": "145000",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Stated annual income: 145000"
+        }
+      ]
+    },
+    {
+      "field": "medical_conditions",
+      "value": "None disclosed; no chronic conditions per APS",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Medical conditions disclosed: None"
+        },
+        {
+          "chunk_id": "CASE-0002__aps_dr_patel.txt__000",
+          "quote": "No chronic conditions. No surgeries."
+        }
+      ]
+    },
+    {
+      "field": "blood_pressure",
+      "value": "118/76 (2025-05, in office)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__aps_dr_patel.txt__000",
+          "quote": "BP 118/76 (in office, 2025-05)."
+        }
+      ]
+    },
+    {
+      "field": "bmi",
+      "value": "24.0",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__aps_dr_patel.txt__000",
+          "quote": "BMI 24.0."
+        }
+      ]
+    },
+    {
+      "field": "lab_results",
+      "value": "HbA1c 5.1%, LDL 92 mg/dL, HDL 58 mg/dL, Total Cholesterol 170 mg/dL, Creatinine 0.9 mg/dL (2025-06-02)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__labs_2025.csv__000",
+          "quote": "HbA1c,5.1,%,2025-06-02"
+        }
+      ]
+    },
+    {
+      "field": "driving_record",
+      "value": "Valid Class C license; no violations or accidents in past 3 years",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__mvr_report.pdf__000",
+          "quote": "Violations (past 3 years): None"
+        }
+      ]
+    },
+    {
+      "field": "family_history",
+      "value": "No family history of early cardiac events or cancer noted",
+      "basis": "stated",
+      "confidence": "medium",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__aps_dr_patel.txt__000",
+          "quote": "No family history of early cardiac events or cancer noted."
+        }
+      ]
+    }
+  ],
+  "missing_information": [
+    {
+      "item": "Quantified alcohol consumption",
+      "why_it_matters": "General statement of 'no alcohol concerns' lacks specifics needed to fully assess lifestyle risk.",
+      "typically_found_in": "APS or paramedical exam"
+    },
+    {
+      "item": "Detailed family medical history (extended relatives, specific ages/conditions)",
+      "why_it_matters": "Family history of hereditary conditions can materially affect mortality risk assessment.",
+      "typically_found_in": "Application or APS"
+    }
+  ],
+  "risk_flags": [],
+  "conflicts": [],
+  "risk_score": 2,
+  "risk_band": "Low",
+  "suggested_action": "Likely standard / preferred, subject to normal checks.",
+  "factor_scores": [
+    {
+      "factor": "Age",
+      "raw_score": 0,
+      "band_label": "Best-fit age band for product (20-30)",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "DOB 1994-03-15 \u2192 age 32, closest to prime 20-30 band"
+    },
+    {
+      "factor": "Tobacco use",
+      "raw_score": 0,
+      "band_label": "Never smoker / no nicotine",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "tobacco_use: never used, confirmed by negative cotinine"
+    },
+    {
+      "factor": "BMI / build",
+      "raw_score": 0,
+      "band_label": "Preferred range",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "BMI 24.0, within preferred range"
+    },
+    {
+      "factor": "Blood pressure",
+      "raw_score": 0,
+      "band_label": "Normal / controlled",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "BP 118/76, normal"
+    },
+    {
+      "factor": "Diabetes",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "HbA1c 5.1%, no diabetes disclosed"
+    },
+    {
+      "factor": "Heart disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No chronic conditions per APS; normal lipid panel"
+    },
+    {
+      "factor": "Cancer history",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No medical conditions disclosed"
+    },
+    {
+      "factor": "Respiratory disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No chronic conditions per APS"
+    },
+    {
+      "factor": "Kidney/liver disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "Creatinine 0.9 mg/dL, normal"
+    },
+    {
+      "factor": "Mental health / substance use",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Medications",
+      "raw_score": 0,
+      "band_label": "Few routine meds",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No chronic conditions disclosed, implying minimal medication use"
+    },
+    {
+      "factor": "Lab abnormalities",
+      "raw_score": 0,
+      "band_label": "Normal labs",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "HbA1c, LDL, HDL, cholesterol, creatinine all within normal ranges"
+    },
+    {
+      "factor": "Recent hospitalization",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Family history",
+      "raw_score": 0,
+      "band_label": "None or irrelevant",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No family history of early cardiac events or cancer noted"
+    },
+    {
+      "factor": "Occupation / avocation",
+      "raw_score": 0,
+      "band_label": "Low hazard",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "Software engineer, low-risk occupation"
+    },
+    {
+      "factor": "Driving record",
+      "raw_score": 0,
+      "band_label": "Clean",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No violations or accidents in past 3 years"
+    },
+    {
+      "factor": "Financial / application consistency",
+      "raw_score": 0,
+      "band_label": "Fully consistent",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No conflicts identified in application data"
+    },
+    {
+      "factor": "APS completeness",
+      "raw_score": 1,
+      "band_label": "Small missing section",
+      "weight": 2,
+      "weighted_contribution": 2,
+      "evidence_status": "assessed",
+      "basis": "Missing quantified alcohol use and detailed extended family history"
+    },
+    {
+      "factor": "Multiple comorbidities",
+      "raw_score": 0,
+      "band_label": "None / isolated issue",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No chronic conditions or comorbid findings"
+    }
+  ],
+  "suggested_action_path": [
+    {
+      "action": "Request a quantified alcohol consumption history (frequency/quantity) from the applicant.",
+      "priority": "low",
+      "rationale": "The current record only offers a general 'no alcohol concerns' statement, which lacks the specifics needed to fully assess lifestyle risk."
+    },
+    {
+      "action": "Request more detailed family medical history, including extended relatives' ages and conditions.",
+      "priority": "low",
+      "rationale": "Detailed family history is missing and could materially affect mortality risk assessment, particularly regarding hereditary conditions."
+    }
+  ],
+  "draft_rationale": {
+    "recommendation": "approve",
+    "rationale": "All key fields reviewed show favorable, high-confidence findings: normal blood pressure and BMI, strong lipid and metabolic lab values, no disclosed medical conditions, non-smoker status confirmed by lab test, and a clean driving record. There are no risk flags or conflicts in the structured findings to raise concern. The two missing-information items\u2014unquantified alcohol use and limited extended family history\u2014are minor gaps rather than red flags, but should ideally be closed out to ensure a complete risk picture before final sign-off. Given the otherwise clean profile, a draft recommendation of approval is reasonable, pending underwriter review of the outstanding informational gaps."
+  },
+  "governance": {
+    "status": "draft - pending underwriter review",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "edit_history": [],
+    "unresolved_citation_issues": []
+  },
+  "_meta": {
+    "documents": [
+      {
+        "name": "advisor_email.txt",
+        "document_type": "Advisor / broker notes",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      },
+      {
+        "name": "application.txt",
+        "document_type": "Application",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      },
+      {
+        "name": "aps_dr_patel.txt",
+        "document_type": "APS (Attending Physician Statement)",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      },
+      {
+        "name": "labs_2025.csv",
+        "document_type": "Lab results",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      },
+      {
+        "name": "mvr_report.pdf",
+        "document_type": "MVR (motor vehicle record)",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      }
+    ],
+    "chunk_count": 5,
+    "feature_extraction": {
+      "model": "anthropic/claude-sonnet-5",
+      "generated_at": "2026-08-20T11:23:10",
+      "unknown_sources": [],
+      "usage": {
+        "prompt_tokens": 2333,
+        "completion_tokens": 2680
+      }
+    },
+    "narrative_generation": {
+      "model": "anthropic/claude-sonnet-5",
+      "generated_at": "2026-08-20T11:23:21",
+      "usage": {
+        "prompt_tokens": 1435,
+        "completion_tokens": 757
+      }
+    },
+    "scoring": {
+      "model": "anthropic/claude-sonnet-5",
+      "generated_at": "2026-08-20T11:23:48",
+      "framework_source": "\\\\xbiek31680dns.centralindia.cloudapp.azure.com\\Hackathon_Collab2\\Atul60176\\Project\\Underwriting_POC.xlsx",
+      "usage": {
+        "prompt_tokens": 3265,
+        "completion_tokens": 2767
+      }
+    }
+  }
+}

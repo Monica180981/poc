@@ -1,0 +1,220 @@
+{
+  "case_id": "CASE-0001",
+  "key_fields": [
+    {
+      "field": "applicant_name",
+      "value": "Jane Doe",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__application.txt__000",
+          "quote": "Applicant: Jane Doe"
+        }
+      ]
+    },
+    {
+      "field": "date_of_birth",
+      "value": "1975-04-12",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__application.txt__000",
+          "quote": "DOB: 1975-04-12"
+        }
+      ]
+    },
+    {
+      "field": "face_amount",
+      "value": "500000",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__application.txt__000",
+          "quote": "Face amount: 500000"
+        }
+      ]
+    },
+    {
+      "field": "product",
+      "value": "20yr Term Life",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__application.txt__000",
+          "quote": "Product: 20yr Term Life"
+        }
+      ]
+    },
+    {
+      "field": "term_length",
+      "value": "20 years",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__application.txt__000",
+          "quote": "Product: 20yr Term Life"
+        }
+      ]
+    },
+    {
+      "field": "tobacco_use",
+      "value": "Non-smoker",
+      "basis": "stated",
+      "confidence": "medium",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__advisor_email.txt__000",
+          "quote": "applicant is a non-smoker, requests preferred rate"
+        }
+      ]
+    },
+    {
+      "field": "diagnosis",
+      "value": "Controlled hypertension (2019)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__aps_dr_smith.txt__000",
+          "quote": "Dx: controlled hypertension (2019)"
+        }
+      ]
+    },
+    {
+      "field": "blood_pressure",
+      "value": "128/82",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__aps_dr_smith.txt__000",
+          "quote": "BP 128/82"
+        }
+      ]
+    },
+    {
+      "field": "lab_result_hba1c",
+      "value": "5.4%",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__labs_2025.csv__000",
+          "quote": "HbA1c,5.4,%,2025-06-01"
+        }
+      ]
+    },
+    {
+      "field": "lab_result_ldl",
+      "value": "110 mg/dL",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__labs_2025.csv__000",
+          "quote": "LDL,110,mg/dL,2025-06-01"
+        }
+      ]
+    },
+    {
+      "field": "mvr_status",
+      "value": "Valid, Class D; no violations or accidents in past 3 years",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__mvr_report.pdf__000",
+          "quote": "License status: Valid, Class D"
+        },
+        {
+          "chunk_id": "CASE-0001__mvr_report.pdf__000",
+          "quote": "Violations (past 3 years): None"
+        }
+      ]
+    },
+    {
+      "field": "prior_underwriting_history",
+      "value": "Approved, standard rate (2021), no adverse findings",
+      "basis": "stated",
+      "confidence": "medium",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__prior_underwriting_history.docx__000",
+          "quote": "Previous policy application (2021): Approved, standard rate. No adverse findings at that time."
+        }
+      ]
+    }
+  ],
+  "missing_information": [
+    {
+      "item": "Nicotine/cotinine lab confirmation",
+      "why_it_matters": "Self-reported non-smoker status from an advisor note is not authoritative and should be verified with a lab test to confirm eligibility for preferred/non-smoker rates.",
+      "typically_found_in": "Lab results (nicotine/cotinine panel)"
+    },
+    {
+      "item": "Height, weight, and BMI",
+      "why_it_matters": "Body mass index is a standard mortality risk factor typically assessed in underwriting.",
+      "typically_found_in": "Application or paramedical exam"
+    },
+    {
+      "item": "Full lipid panel (HDL, total cholesterol)",
+      "why_it_matters": "Only LDL is provided; a complete lipid profile is needed to fully assess cardiovascular risk given the hypertension history.",
+      "typically_found_in": "Lab results"
+    },
+    {
+      "item": "Current antihypertensive medication and dosage details",
+      "why_it_matters": "Knowing the treatment regimen and compliance helps assess control and stability of the hypertension diagnosis.",
+      "typically_found_in": "Attending Physician Statement (APS)"
+    },
+    {
+      "item": "Family medical history",
+      "why_it_matters": "Family history of cardiovascular or other hereditary conditions can materially affect mortality risk assessment.",
+      "typically_found_in": "Application"
+    }
+  ],
+  "risk_flags": [
+    {
+      "flag": "Chronic condition: hypertension",
+      "category": "medical",
+      "severity": "low",
+      "rationale": "Hypertension is noted as controlled with a blood pressure reading (128/82) within near-normal range, indicating well-managed condition.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__aps_dr_smith.txt__000",
+          "quote": "Dx: controlled hypertension (2019)"
+        },
+        {
+          "chunk_id": "CASE-0001__aps_dr_smith.txt__000",
+          "quote": "BP 128/82"
+        }
+      ]
+    },
+    {
+      "flag": "Unverified tobacco/non-smoker status",
+      "category": "lifestyle",
+      "severity": "moderate",
+      "rationale": "Non-smoker status is reported only in an advisor note rather than confirmed via lab testing, which is a weaker source of evidence for preferred rate eligibility.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0001__advisor_email.txt__000",
+          "quote": "applicant is a non-smoker, requests preferred rate"
+        }
+      ]
+    }
+  ],
+  "conflicts": [],
+  "_meta": {
+    "model": "anthropic/claude-sonnet-5",
+    "generated_at": "2026-08-20T12:38:06",
+    "unknown_sources": [],
+    "usage": {
+      "prompt_tokens": 2182,
+      "completion_tokens": 2602
+    }
+  }
+}

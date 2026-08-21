@@ -1,0 +1,188 @@
+{
+  "case_id": "CASE-0003",
+  "factor_scores": [
+    {
+      "factor": "Age",
+      "raw_score": 2,
+      "band_label": "Moderately adverse band (45-55)",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "DOB 1972-09-30, current age 53"
+    },
+    {
+      "factor": "Tobacco use",
+      "raw_score": 0,
+      "band_label": "Never smoker / no nicotine",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "Confirmed negative cotinine, never used tobacco"
+    },
+    {
+      "factor": "BMI / build",
+      "raw_score": 1,
+      "band_label": "Mildly outside preferred",
+      "weight": 2,
+      "weighted_contribution": 2,
+      "evidence_status": "assessed",
+      "basis": "BMI 29.0, overweight range"
+    },
+    {
+      "factor": "Blood pressure",
+      "raw_score": 2,
+      "band_label": "Repeated elevated readings / moderate control issues",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "140/90 mmHg on treatment, flagged as persistent mild elevation needing review"
+    },
+    {
+      "factor": "Diabetes",
+      "raw_score": 1,
+      "band_label": "Diet controlled / mild",
+      "weight": 3,
+      "weighted_contribution": 3,
+      "evidence_status": "assessed",
+      "basis": "Prediabetes, diet-managed, fasting glucose 108, HbA1c 6.0%"
+    },
+    {
+      "factor": "Heart disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "No evidence found"
+    },
+    {
+      "factor": "Cancer history",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "No evidence found"
+    },
+    {
+      "factor": "Respiratory disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "No evidence found"
+    },
+    {
+      "factor": "Kidney/liver disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "No evidence found"
+    },
+    {
+      "factor": "Mental health / substance use",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "No evidence found"
+    },
+    {
+      "factor": "Medications",
+      "raw_score": 1,
+      "band_label": "Multiple chronic meds",
+      "weight": 1,
+      "weighted_contribution": 1,
+      "evidence_status": "assessed",
+      "basis": "Lisinopril, Atorvastatin, HCTZ - three chronic medications"
+    },
+    {
+      "factor": "Lab abnormalities",
+      "raw_score": 2,
+      "band_label": "Moderate abnormality",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "Elevated LDL 155, total cholesterol 225, fasting glucose 108, HbA1c 6.0%"
+    },
+    {
+      "factor": "Recent hospitalization",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "No evidence found"
+    },
+    {
+      "factor": "Family history",
+      "raw_score": 0,
+      "band_label": "None or irrelevant",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "Family history missing from case findings"
+    },
+    {
+      "factor": "Occupation / avocation",
+      "raw_score": 0,
+      "band_label": "Low hazard",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "Elementary school teacher - low hazard occupation"
+    },
+    {
+      "factor": "Driving record",
+      "raw_score": 1,
+      "band_label": "Minor violations only",
+      "weight": 1,
+      "weighted_contribution": 1,
+      "evidence_status": "assessed",
+      "basis": "One speeding violation, no accidents in past 3 years"
+    },
+    {
+      "factor": "Financial / application consistency",
+      "raw_score": 2,
+      "band_label": "Noticeable inconsistency",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "Undisclosed hydrochlorothiazide medication vs application disclosure"
+    },
+    {
+      "factor": "APS completeness",
+      "raw_score": 2,
+      "band_label": "Several missing details",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "Missing family history, EKG/cardiac workup, statin adequacy clarification, medication discrepancy explanation"
+    },
+    {
+      "factor": "Multiple comorbidities",
+      "raw_score": 2,
+      "band_label": "Several meaningful conditions",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "Hypertension, prediabetes, dyslipidemia, overweight BMI co-occurring"
+    }
+  ],
+  "total_score": 31,
+  "risk_band": "High",
+  "suggested_action": "Elevated risk, likely table rating / postponement / decline depending on rules.",
+  "_meta": {
+    "model": "anthropic/claude-sonnet-5",
+    "generated_at": "2026-08-18T07:13:12",
+    "framework_source": "\\\\xbiek31680dns.centralindia.cloudapp.azure.com\\Hackathon_Collab2\\Atul60176\\Project\\Underwriting_POC.xlsx",
+    "usage": {
+      "prompt_tokens": 4042,
+      "completion_tokens": 2947
+    }
+  }
+}

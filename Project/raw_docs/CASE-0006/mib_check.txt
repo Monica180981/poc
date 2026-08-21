@@ -1,0 +1,2 @@
+MIB check: A prior code on file references a tobacco-related notation from a
+2022 application. Recommend reconciling tobacco status before offer.

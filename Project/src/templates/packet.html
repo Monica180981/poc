@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+{% block title %}{{ packet.case_id }} — Underwriting Packet{% endblock %}
+{% block header %}{{ packet.case_id }}{% endblock %}
+{% block subtitle %}
+  {{ packet.product_line }} &middot; generated {{ packet.generated_at }} &middot;
+  <a href="{{ url_for('index') }}">&larr; all cases</a>
+{% endblock %}
+{% block content %}
+
+<div class="disclaimer">{{ packet.disclaimer }}</div>
+
+<div class="score-banner">
+  <div>
+    <div class="metric">Risk Score</div>
+    <div class="value">{{ packet.risk_score if packet.risk_score is not none else "—" }}</div>
+  </div>
+  <div>
+    <div class="metric">Risk Band</div>
+    <div class="value">
+      {% if packet.risk_band %}
+        <span class="badge badge-lg badge-band-{{ packet.risk_band|lower|replace(' ', '-') }}">{{ packet.risk_band }}</span>
+      {% else %}&mdash;{% endif %}
+    </div>
+  </div>
+  <div style="flex: 1;">
+    <div class="metric">Suggested Action</div>
+    <div class="value" style="font-size: 1rem; font-weight: 400;">{{ packet.suggested_action or "—" }}</div>
+  </div>
+</div>
+
+<nav class="sections">
+  <a href="#summary">Summary</a>
+  <a href="#key-fields">Key Fields</a>
+  <a href="#missing-information">Missing Information</a>
+  <a href="#risk-flags">Risk Flags</a>
+  <a href="#conflicts">Conflicts</a>
+  <a href="#score-breakdown">Risk Score Breakdown</a>
+  <a href="#action-path">Suggested Action Path</a>
+  <a href="#draft-rationale">Draft Rationale</a>
+  <a href="#governance">Governance &amp; Audit Trail</a>
+</nav>
+
+<section id="summary">
+  <h2>Summary</h2>
+  <p>{{ packet.summary }}</p>
+</section>
+
+<section id="key-fields">
+  <h2>Key Fields</h2>
+  <table>
+    <tr><th>Sl. No.</th><th>Field</th><th>Value</th><th>Sources</th></tr>
+    {% for f in packet.key_fields %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ f.field }}</td>
+      <td>{{ f.value }}</td>
+      <td>
+        {% for s in f.sources %}
+          <div class="source-item">{{ s.chunk_id }}<br><span class="quote">&ldquo;{{ s.quote }}&rdquo;</span></div>
+        {% endfor %}
+      </td>
+    </tr>
+    {% else %}
+    <tr><td colspan="4">None extracted.</td></tr>
+    {% endfor %}
+  </table>
+</section>
+
+<section id="missing-information">
+  <h2>Missing Information</h2>
+  <table>
+    <tr><th>Item</th><th>Why it matters</th><th>Typically found in</th></tr>
+    {% for m in packet.missing_information %}
+    <tr><td>{{ m.item }}</td><td>{{ m.why_it_matters }}</td><td>{{ m.typically_found_in }}</td></tr>
+    {% else %}
+    <tr><td colspan="3">None.</td></tr>
+    {% endfor %}
+  </table>
+</section>
+
+<section id="risk-flags">
+  <h2>Risk Flags</h2>
+  <table>
+    <tr><th>Flag</th><th>Category</th><th>Severity</th><th>Rationale</th><th>Sources</th></tr>
+    {% for r in packet.risk_flags %}
+    <tr>
+      <td>{{ r.flag }}</td>
+      <td>{{ r.category }}</td>
+      <td><span class="badge badge-{{ r.severity }}">{{ r.severity }}</span></td>
+      <td>{{ r.rationale }}</td>
+      <td>
+        {% for s in r.sources %}
+          <div class="source-item">{{ s.chunk_id }}<br><span class="quote">&ldquo;{{ s.quote }}&rdquo;</span></div>
+        {% endfor %}
+      </td>
+    </tr>
+    {% else %}
+    <tr><td colspan="5">None.</td></tr>
+    {% endfor %}
+  </table>
+</section>
+
+<section id="conflicts">
+  <h2>Conflicts</h2>
+  {% for c in packet.conflicts %}
+    <p>{{ c.description }}</p>
+    <ul>
+      {% for s in c.sources %}
+        <li>{{ s.chunk_id }} — <span class="quote">&ldquo;{{ s.quote }}&rdquo;</span></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>None detected.</p>
+  {% endfor %}
+</section>
+
+<section id="score-breakdown">
+  <h2>Risk Score Breakdown</h2>
+  <p>Per-factor bands chosen against the team's scoring framework. Weighted
+  contribution = raw score &times; weight; the total drives the risk band
+  above. This arithmetic is computed in plain Python, not by the model —
+  only each factor's band choice comes from Claude.</p>
+  <table>
+    <tr><th>Sl. No.</th><th>Factor</th><th>Band chosen</th><th>Raw</th><th>Weight</th><th>Contribution</th><th>Evidence</th><th>Basis</th></tr>
+    {% for f in packet.factor_scores %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ f.factor }}</td>
+      <td>{{ f.band_label }}</td>
+      <td>{{ f.raw_score }}</td>
+      <td>{{ f.weight }}</td>
+      <td>{{ f.weighted_contribution }}</td>
+      <td>{% if f.evidence_status == "not_addressed" %}<span class="quote">not addressed</span>{% else %}assessed{% endif %}</td>
+      <td>{{ f.basis }}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="8">No score breakdown available.</td></tr>
+    {% endfor %}
+  </table>
+</section>
+
+<section id="action-path">
+  <h2>Suggested Action Path</h2>
+  <table>
+    <tr><th>Action</th><th>Priority</th><th>Rationale</th></tr>
+    {% for a in packet.suggested_action_path %}
+    <tr><td>{{ a.action }}</td><td>{{ a.priority }}</td><td>{{ a.rationale }}</td></tr>
+    {% else %}
+    <tr><td colspan="3">None suggested.</td></tr>
+    {% endfor %}
+  </table>
+</section>
+
+<section id="draft-rationale">
+  <h2>Draft Rationale</h2>
+  <p><strong>Recommendation (draft):</strong> {{ packet.draft_rationale.recommendation }}</p>
+  <p>{{ packet.draft_rationale.rationale }}</p>
+</section>
+
+<section id="governance">
+  <h2>Governance &amp; Audit Trail</h2>
+  <table>
+    <tr><th>Status</th><td>{{ packet.governance.status }}</td></tr>
+    <tr><th>Reviewed by</th><td>{{ packet.governance.reviewed_by or "—" }}</td></tr>
+    <tr><th>Reviewed at</th><td>{{ packet.governance.reviewed_at or "—" }}</td></tr>
+    <tr>
+      <th>Unresolved citation issues</th>
+      <td>{{ packet.governance.unresolved_citation_issues if packet.governance.unresolved_citation_issues else "None" }}</td>
+    </tr>
+    <tr>
+      <th>Documents processed</th>
+      <td>
+        <ul>
+        {% for d in packet._meta.documents %}
+          <li>{{ d.name }} ({{ d.document_type }}) — {{ d.extraction_status }}</li>
+        {% endfor %}
+        </ul>
+      </td>
+    </tr>
+  </table>
+</section>
+
+{% endblock %}

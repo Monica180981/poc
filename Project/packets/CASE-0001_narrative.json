@@ -1,0 +1,37 @@
+{
+  "summary": "Jane Doe, age 49, is applying for a 20-year, $500,000 term life policy. Her medical profile shows controlled hypertension with a normal blood pressure reading (128/82) and favorable lab values (HbA1c 5.4%, LDL 110 mg/dL), and she was previously approved at standard rates in 2021. However, several pieces of information remain unverified, including tobacco use status, current hypertension medications, cardiovascular workup, and financial justification for the face amount. These gaps should be addressed before a final underwriting decision is made.",
+  "suggested_action_path": [
+    {
+      "action": "Request paramedical exam or lab confirmation of tobacco use status",
+      "priority": "high",
+      "rationale": "Tobacco use is currently based only on an advisor note and materially affects mortality risk and rate classification."
+    },
+    {
+      "action": "Obtain full medical exam or EKG/cardiovascular workup",
+      "priority": "medium",
+      "rationale": "History of hypertension warrants additional cardiovascular evidence to confirm current control, consistent with the noted risk flag."
+    },
+    {
+      "action": "Collect current medication list for hypertension",
+      "priority": "medium",
+      "rationale": "Medication details are missing and needed to confirm treatment compliance and ongoing control of the chronic condition."
+    },
+    {
+      "action": "Request financial underwriting details (income, net worth, purpose of insurance)",
+      "priority": "medium",
+      "rationale": "Financial justification is missing and needed to assess whether the $500,000 face amount is appropriate relative to insurable interest."
+    }
+  ],
+  "draft_rationale": {
+    "recommendation": "postpone",
+    "rationale": "The applicant's core medical indicators (blood pressure, HbA1c, LDL) and driving record are favorable, and there is a prior standard-rate approval, which supports a generally low routine risk profile. However, the case has multiple unresolved missing-information items that are material to underwriting: unconfirmed tobacco use status (currently only advisor-sourced), absence of a cardiovascular workup despite a chronic hypertension diagnosis, no current medication list to confirm treatment compliance, and no financial underwriting details to justify the requested face amount. Given these gaps and the standing low-risk hypertension flag requiring confirmation of ongoing control, a final decision should be postponed pending additional documentation rather than issued or declined at this stage."
+  },
+  "_meta": {
+    "model": "anthropic/claude-sonnet-5",
+    "generated_at": "2026-07-27T15:43:43",
+    "usage": {
+      "prompt_tokens": 1397,
+      "completion_tokens": 851
+    }
+  }
+}

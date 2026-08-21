@@ -1,0 +1,10 @@
+Applicant: Daniel Foster
+DOB: 1980-07-01
+Sex: Male
+Height: 6'0"  Weight: 190 lb
+Face amount: 500000
+Product: 20yr Term Life
+Occupation: Marketing manager
+Tobacco: Never used - NON-SMOKER
+Stated annual income: 130000
+Medical conditions disclosed: None

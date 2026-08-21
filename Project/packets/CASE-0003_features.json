@@ -1,0 +1,386 @@
+{
+  "case_id": "CASE-0003",
+  "key_fields": [
+    {
+      "field": "applicant_name",
+      "value": "Susan Miller",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__application.txt__000",
+          "quote": "Applicant: Susan Miller"
+        }
+      ]
+    },
+    {
+      "field": "date_of_birth",
+      "value": "1972-09-30",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__application.txt__000",
+          "quote": "DOB: 1972-09-30"
+        }
+      ]
+    },
+    {
+      "field": "sex",
+      "value": "Female",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__application.txt__000",
+          "quote": "Sex: Female"
+        }
+      ]
+    },
+    {
+      "field": "height_weight",
+      "value": "5'5\", 174 lb",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__application.txt__000",
+          "quote": "Height: 5'5\"  Weight: 174 lb"
+        }
+      ]
+    },
+    {
+      "field": "bmi",
+      "value": "29.0 (overweight range)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__aps_dr_nguyen.docx__000",
+          "quote": "BMI 29.0 (overweight range)."
+        }
+      ]
+    },
+    {
+      "field": "face_amount",
+      "value": "750000",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__application.txt__000",
+          "quote": "Face amount: 750000"
+        }
+      ]
+    },
+    {
+      "field": "product",
+      "value": "20yr Term Life",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__application.txt__000",
+          "quote": "Product: 20yr Term Life"
+        }
+      ]
+    },
+    {
+      "field": "term_length",
+      "value": "20 years",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__application.txt__000",
+          "quote": "Product: 20yr Term Life"
+        }
+      ]
+    },
+    {
+      "field": "occupation",
+      "value": "Elementary school teacher",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__application.txt__000",
+          "quote": "Occupation: Elementary school teacher"
+        }
+      ]
+    },
+    {
+      "field": "stated_annual_income",
+      "value": "92000",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__application.txt__000",
+          "quote": "Stated annual income: 92000"
+        }
+      ]
+    },
+    {
+      "field": "tobacco_use",
+      "value": "Never used / Non-smoker (confirmed negative cotinine)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__application.txt__000",
+          "quote": "Tobacco: Never used"
+        },
+        {
+          "chunk_id": "CASE-0003__labs_2025.csv__000",
+          "quote": "Cotinine,Negative,,2025-04-20"
+        }
+      ]
+    },
+    {
+      "field": "diagnosis_hypertension",
+      "value": "Hypertension diagnosed 2016, controlled on medication, mildly elevated readings",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__aps_dr_nguyen.docx__000",
+          "quote": "Hypertension diagnosed 2016, controlled on medication. In-office BP readings over the last year: 138/88, 134/86, 140/90 (mildly elevated)."
+        }
+      ]
+    },
+    {
+      "field": "diagnosis_prediabetes",
+      "value": "Prediabetes (impaired fasting glucose) noted 2023, managed with diet",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__aps_dr_nguyen.docx__000",
+          "quote": "Prediabetes (impaired fasting glucose) noted 2023; managed with diet."
+        }
+      ]
+    },
+    {
+      "field": "medications",
+      "value": "Lisinopril 20mg daily, Atorvastatin 20mg daily, Hydrochlorothiazide 12.5mg (added 2022)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__rx_history.pdf__000",
+          "quote": "Lisinopril 20 mg daily        - ongoing since 2016 (hypertension)\nAtorvastatin 20 mg daily      - ongoing since 2020 (cholesterol)\nHydrochlorothiazide 12.5 mg   - added 2022 (blood pressure)"
+        }
+      ]
+    },
+    {
+      "field": "blood_pressure",
+      "value": "140/90 mmHg (most recent, mildly elevated on treatment)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__aps_dr_nguyen.docx__000",
+          "quote": "Blood pressure | 140/90 (mildly elevated, on treatment)"
+        }
+      ]
+    },
+    {
+      "field": "fasting_glucose",
+      "value": "108 mg/dL",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__labs_2025.csv__000",
+          "quote": "Fasting_Glucose,108,mg/dL,2025-04-20"
+        }
+      ]
+    },
+    {
+      "field": "hba1c",
+      "value": "6.0%",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__labs_2025.csv__000",
+          "quote": "HbA1c,6.0,%,2025-04-20"
+        }
+      ]
+    },
+    {
+      "field": "ldl_cholesterol",
+      "value": "155 mg/dL",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__labs_2025.csv__000",
+          "quote": "LDL,155,mg/dL,2025-04-20"
+        }
+      ]
+    },
+    {
+      "field": "total_cholesterol",
+      "value": "225 mg/dL",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__labs_2025.csv__000",
+          "quote": "Total_Cholesterol,225,mg/dL,2025-04-20"
+        }
+      ]
+    },
+    {
+      "field": "mvr_violation",
+      "value": "1 speeding violation (11-15 mph over), 2024-08; no accidents past 3 years",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__mvr_report.pdf__000",
+          "quote": "Violations (past 3 years): 1 x speeding 11-15 mph over (2024-08)"
+        }
+      ]
+    }
+  ],
+  "missing_information": [
+    {
+      "item": "Family medical history",
+      "why_it_matters": "Family history of cardiovascular disease or diabetes can materially affect mortality risk assessment.",
+      "typically_found_in": "Application or APS"
+    },
+    {
+      "item": "Recent EKG or cardiovascular workup",
+      "why_it_matters": "Given hypertension and elevated cholesterol, cardiac risk stratification benefits from objective cardiac testing.",
+      "typically_found_in": "APS or paramedical exam"
+    },
+    {
+      "item": "Clarification of statin dosage/treatment adequacy for elevated LDL",
+      "why_it_matters": "LDL remains elevated (155 mg/dL) despite statin use, which may indicate inadequate control needing further evaluation.",
+      "typically_found_in": "APS or physician follow-up notes"
+    },
+    {
+      "item": "Explanation for undisclosed third medication (hydrochlorothiazide) on application",
+      "why_it_matters": "Application medication disclosure should match prescription history to ensure full risk transparency.",
+      "typically_found_in": "Application or follow-up questionnaire"
+    }
+  ],
+  "risk_flags": [
+    {
+      "flag": "Hypertension with mildly elevated readings despite treatment",
+      "category": "medical",
+      "severity": "moderate",
+      "rationale": "Controlled hypertension is common, but persistent mildly elevated BP readings on medication warrant closer underwriting review.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__aps_dr_nguyen.docx__000",
+          "quote": "In-office BP readings over the last year: 138/88, 134/86, 140/90 (mildly elevated)."
+        }
+      ]
+    },
+    {
+      "flag": "Prediabetes / borderline elevated fasting glucose",
+      "category": "medical",
+      "severity": "moderate",
+      "rationale": "Impaired fasting glucose can be a precursor to diabetes, which increases long-term mortality risk if uncontrolled.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__aps_dr_nguyen.docx__000",
+          "quote": "Prediabetes (impaired fasting glucose) noted 2023; managed with diet."
+        }
+      ]
+    },
+    {
+      "flag": "Elevated LDL and total cholesterol despite statin therapy",
+      "category": "medical",
+      "severity": "moderate",
+      "rationale": "LDL of 155 mg/dL and total cholesterol of 225 mg/dL remain above optimal ranges even while on cholesterol medication.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__labs_2025.csv__000",
+          "quote": "LDL,155,mg/dL,2025-04-20"
+        }
+      ]
+    },
+    {
+      "flag": "Overweight BMI",
+      "category": "medical",
+      "severity": "low",
+      "rationale": "A BMI of 29 is in the overweight range and can compound cardiometabolic risk factors, though it is a minor independent concern.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__aps_dr_nguyen.docx__000",
+          "quote": "BMI 29.0 (overweight range)."
+        }
+      ]
+    },
+    {
+      "flag": "Minor speeding violation on driving record",
+      "category": "driving",
+      "severity": "low",
+      "rationale": "A single moderate speeding violation with no accidents is a minor driving risk factor.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__mvr_report.pdf__000",
+          "quote": "1 x speeding 11-15 mph over (2024-08)"
+        }
+      ]
+    },
+    {
+      "flag": "Undisclosed medication on application",
+      "category": "other",
+      "severity": "moderate",
+      "rationale": "The application's medication list omits a third blood-pressure medication found in prescription history, indicating incomplete disclosure.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__rx_history.pdf__000",
+          "quote": "Hydrochlorothiazide 12.5 mg   - added 2022 (blood pressure)"
+        }
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "description": "Application discloses only two medications (Lisinopril, atorvastatin), while prescription history shows a third ongoing medication (hydrochlorothiazide) for blood pressure.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__application.txt__000",
+          "quote": "Medications disclosed: Lisinopril, atorvastatin"
+        },
+        {
+          "chunk_id": "CASE-0003__rx_history.pdf__000",
+          "quote": "Hydrochlorothiazide 12.5 mg   - added 2022 (blood pressure)"
+        }
+      ]
+    },
+    {
+      "description": "Advisor note characterizes blood pressure and cholesterol as 'stable,' while APS and lab results show mildly elevated BP (140/90) and elevated LDL/total cholesterol.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0003__advisor_email.txt__000",
+          "quote": "Blood pressure and cholesterol both on medication and stable per her doctor."
+        },
+        {
+          "chunk_id": "CASE-0003__aps_dr_nguyen.docx__000",
+          "quote": "Blood pressure | 140/90 (mildly elevated, on treatment)"
+        },
+        {
+          "chunk_id": "CASE-0003__labs_2025.csv__000",
+          "quote": "LDL,155,mg/dL,2025-04-20"
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "model": "anthropic/claude-sonnet-5",
+    "generated_at": "2026-08-18T07:12:32",
+    "unknown_sources": [],
+    "usage": {
+      "prompt_tokens": 2767,
+      "completion_tokens": 5180
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Cases — Underwriting Packet Viewer{% endblock %}
+{% block subtitle %}{{ product_line }} &middot; {{ cases|length }} case(s) with a packet{% endblock %}
+{% block content %}
+{% if cases %}
+<table class="case-list-table">
+  <tr><th>Case ID</th><th>Risk Band</th><th>Risk Score</th><th>Suggested Action</th></tr>
+  {% for c in cases %}
+  <tr>
+    <td><a href="{{ url_for('view_case', case_id=c.case_id) }}">{{ c.case_id }}</a></td>
+    <td>
+      {% if c.risk_band %}
+        <span class="badge badge-lg badge-band-{{ c.risk_band|lower|replace(' ', '-') }}">{{ c.risk_band }}</span>
+      {% else %}
+        &mdash;
+      {% endif %}
+    </td>
+    <td>{{ c.risk_score if c.risk_score is not none else "—" }}</td>
+    <td>{{ c.suggested_action or "—" }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% else %}
+  <p>No packets found yet. Run <code>python src/generate_packet.py --case &lt;CASE_ID&gt;</code> first.</p>
+{% endif %}
+{% endblock %}

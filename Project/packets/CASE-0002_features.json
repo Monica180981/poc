@@ -1,0 +1,232 @@
+{
+  "case_id": "CASE-0002",
+  "key_fields": [
+    {
+      "field": "applicant_name",
+      "value": "Michael Chen",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Applicant: Michael Chen"
+        }
+      ]
+    },
+    {
+      "field": "date_of_birth",
+      "value": "1994-03-15",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "DOB: 1994-03-15"
+        }
+      ]
+    },
+    {
+      "field": "sex",
+      "value": "Male",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Sex: Male"
+        }
+      ]
+    },
+    {
+      "field": "height_weight",
+      "value": "5'11\", 172 lb",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Height: 5'11\"  Weight: 172 lb"
+        }
+      ]
+    },
+    {
+      "field": "face_amount",
+      "value": "250000",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Face amount: 250000"
+        }
+      ]
+    },
+    {
+      "field": "product",
+      "value": "20yr Term Life",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Product: 20yr Term Life"
+        }
+      ]
+    },
+    {
+      "field": "term_length",
+      "value": "20 years",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Product: 20yr Term Life"
+        }
+      ]
+    },
+    {
+      "field": "occupation",
+      "value": "Software engineer",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Occupation: Software engineer"
+        }
+      ]
+    },
+    {
+      "field": "tobacco_use",
+      "value": "Never used / non-smoker (confirmed by negative cotinine)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Tobacco: Never used"
+        },
+        {
+          "chunk_id": "CASE-0002__aps_dr_patel.txt__000",
+          "quote": "Non-smoker; no alcohol concerns."
+        },
+        {
+          "chunk_id": "CASE-0002__labs_2025.csv__000",
+          "quote": "Cotinine,Negative,,2025-06-02"
+        }
+      ]
+    },
+    {
+      "field": "stated_annual_income",
+      "value": "145000",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Stated annual income: 145000"
+        }
+      ]
+    },
+    {
+      "field": "medical_conditions",
+      "value": "None disclosed; no chronic conditions per APS",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__application.txt__000",
+          "quote": "Medical conditions disclosed: None"
+        },
+        {
+          "chunk_id": "CASE-0002__aps_dr_patel.txt__000",
+          "quote": "No chronic conditions. No surgeries."
+        }
+      ]
+    },
+    {
+      "field": "blood_pressure",
+      "value": "118/76 (2025-05, in office)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__aps_dr_patel.txt__000",
+          "quote": "BP 118/76 (in office, 2025-05)."
+        }
+      ]
+    },
+    {
+      "field": "bmi",
+      "value": "24.0",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__aps_dr_patel.txt__000",
+          "quote": "BMI 24.0."
+        }
+      ]
+    },
+    {
+      "field": "lab_results",
+      "value": "HbA1c 5.1%, LDL 92 mg/dL, HDL 58 mg/dL, Total Cholesterol 170 mg/dL, Creatinine 0.9 mg/dL (2025-06-02)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__labs_2025.csv__000",
+          "quote": "HbA1c,5.1,%,2025-06-02"
+        }
+      ]
+    },
+    {
+      "field": "driving_record",
+      "value": "Valid Class C license; no violations or accidents in past 3 years",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__mvr_report.pdf__000",
+          "quote": "Violations (past 3 years): None"
+        }
+      ]
+    },
+    {
+      "field": "family_history",
+      "value": "No family history of early cardiac events or cancer noted",
+      "basis": "stated",
+      "confidence": "medium",
+      "sources": [
+        {
+          "chunk_id": "CASE-0002__aps_dr_patel.txt__000",
+          "quote": "No family history of early cardiac events or cancer noted."
+        }
+      ]
+    }
+  ],
+  "missing_information": [
+    {
+      "item": "Quantified alcohol consumption",
+      "why_it_matters": "General statement of 'no alcohol concerns' lacks specifics needed to fully assess lifestyle risk.",
+      "typically_found_in": "APS or paramedical exam"
+    },
+    {
+      "item": "Detailed family medical history (extended relatives, specific ages/conditions)",
+      "why_it_matters": "Family history of hereditary conditions can materially affect mortality risk assessment.",
+      "typically_found_in": "Application or APS"
+    }
+  ],
+  "risk_flags": [],
+  "conflicts": [],
+  "_meta": {
+    "model": "anthropic/claude-sonnet-5",
+    "generated_at": "2026-08-20T11:23:10",
+    "unknown_sources": [],
+    "usage": {
+      "prompt_tokens": 2333,
+      "completion_tokens": 2680
+    }
+  }
+}

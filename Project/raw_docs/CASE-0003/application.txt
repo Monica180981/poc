@@ -1,0 +1,11 @@
+Applicant: Susan Miller
+DOB: 1972-09-30
+Sex: Female
+Height: 5'5"  Weight: 174 lb
+Face amount: 750000
+Product: 20yr Term Life
+Occupation: Elementary school teacher
+Tobacco: Never used
+Stated annual income: 92000
+Medical conditions disclosed: Controlled high blood pressure; borderline blood sugar
+Medications disclosed: Lisinopril, atorvastatin

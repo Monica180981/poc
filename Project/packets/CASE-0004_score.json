@@ -1,0 +1,188 @@
+{
+  "case_id": "CASE-0004",
+  "factor_scores": [
+    {
+      "factor": "Age",
+      "raw_score": 3,
+      "band_label": "Strongly adverse band (55-60)",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "DOB 1966-01-08 \u2192 age 60 as of evaluation date"
+    },
+    {
+      "factor": "Tobacco use",
+      "raw_score": 3,
+      "band_label": "Current smoker / nicotine user",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "Positive cotinine 315 ng/mL and elevated carboxyhemoglobin 6.8% despite declared non-smoker status"
+    },
+    {
+      "factor": "BMI / build",
+      "raw_score": 2,
+      "band_label": "Moderately outside preferred",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "BMI 34.1, obesity risk flag"
+    },
+    {
+      "factor": "Blood pressure",
+      "raw_score": 2,
+      "band_label": "Repeated elevated readings / moderate control issues",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "BP 152/96 despite therapy; uncontrolled hypertension flag"
+    },
+    {
+      "factor": "Diabetes",
+      "raw_score": 2,
+      "band_label": "Oral meds, stable",
+      "weight": 3,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "HbA1c 7.8% on Metformin/Glipizide; suboptimal control flag"
+    },
+    {
+      "factor": "Heart disease",
+      "raw_score": 2,
+      "band_label": "Established disease, stable",
+      "weight": 3,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "CAD with drug-eluting stent (2021), LVEF 52%, no confirmed recent event"
+    },
+    {
+      "factor": "Cancer history",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Respiratory disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Kidney/liver disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Mental health / substance use",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Medications",
+      "raw_score": 2,
+      "band_label": "Several high-risk meds / complex regimen",
+      "weight": 1,
+      "weighted_contribution": 2,
+      "evidence_status": "assessed",
+      "basis": "Metformin, Glipizide, Metoprolol, Atorvastatin, Aspirin, Lisinopril, Nitroglycerin PRN"
+    },
+    {
+      "factor": "Lab abnormalities",
+      "raw_score": 2,
+      "band_label": "Moderate abnormality",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "Dyslipidemia (elevated LDL/triglycerides, low HDL), elevated HbA1c, positive cotinine/carboxyhemoglobin"
+    },
+    {
+      "factor": "Recent hospitalization",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Family history",
+      "raw_score": 2,
+      "band_label": "Strong early family history",
+      "weight": 1,
+      "weighted_contribution": 2,
+      "evidence_status": "assessed",
+      "basis": "Father MI at age 52"
+    },
+    {
+      "factor": "Occupation / avocation",
+      "raw_score": 0,
+      "band_label": "Low hazard",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Driving record",
+      "raw_score": 0,
+      "band_label": "Clean",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Financial / application consistency",
+      "raw_score": 3,
+      "band_label": "Material under-disclosure / contradiction",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "Declared non-smoker/preferred rate class conflicts with positive cotinine, carboxyhemoglobin, and APS former smoker history"
+    },
+    {
+      "factor": "APS completeness",
+      "raw_score": 2,
+      "band_label": "Several missing details",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "Missing EKG/stress test results and cardiology follow-up notes since stent placement"
+    },
+    {
+      "factor": "Multiple comorbidities",
+      "raw_score": 3,
+      "band_label": "Several serious conditions",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "Coexisting CAD with stent, diabetes with suboptimal control, hypertension, obesity, dyslipidemia"
+    }
+  ],
+  "total_score": 59,
+  "risk_band": "Very high",
+  "suggested_action": "Strong adverse risk; likely manual escalation or decline under many guidelines.",
+  "_meta": {
+    "model": "anthropic/claude-sonnet-5",
+    "generated_at": "2026-08-18T07:11:23",
+    "framework_source": "\\\\xbiek31680dns.centralindia.cloudapp.azure.com\\Hackathon_Collab2\\Atul60176\\Project\\Underwriting_POC.xlsx",
+    "usage": {
+      "prompt_tokens": 4126,
+      "completion_tokens": 2855
+    }
+  }
+}

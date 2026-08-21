@@ -1,0 +1,4 @@
+EHR clinical summary: Patient with a multi-year history of type 2 diabetes
+and hypertension, both under active treatment. History of depression managed
+with medication. Financial note: requested coverage of 2,000,000 is roughly
+25x stated income of 80,000 - flagged by intake for justification.

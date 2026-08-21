@@ -1,0 +1,630 @@
+{
+  "case_id": "CASE-0004",
+  "product_line": "Term Life Insurance",
+  "generated_at": "2026-08-18T07:11:23",
+  "disclaimer": "This packet is an AI-assisted DRAFT for underwriter review. It is not an approval, decline, or binding decision.",
+  "summary": "Robert Hayes, age 59, has applied for a $500,000 15-year term life policy at the Preferred Non-Tobacco rate, but the case shows significant unresolved medical and disclosure issues. He has a documented history of coronary artery disease with a drug-eluting stent, poorly controlled Type 2 diabetes (HbA1c 7.8%), uncontrolled hypertension, obesity, dyslipidemia, and a family history of early cardiac death, all of which materially elevate mortality risk. There is also a direct conflict between his declared non-smoker status and lab findings (positive cotinine and elevated carboxyhemoglobin) plus APS notes of recent smoking cessation, calling the requested preferred non-tobacco rate class into question. An active PRN nitroglycerin prescription further conflicts with the APS statement of no angina in the past 12 months, suggesting possible unreported symptoms. Key objective evidence \u2014 recent EKG/stress test results, cardiology follow-up notes, confirmed smoking status, and income verification \u2014 is missing and needed before classification can be finalized.",
+  "key_fields": [
+    {
+      "field": "applicant_name",
+      "value": "Robert Hayes",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__applicant_declaration_form.txt__000",
+          "quote": "Full name:                 Robert Hayes"
+        }
+      ]
+    },
+    {
+      "field": "date_of_birth",
+      "value": "1966-01-08",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__applicant_declaration_form.txt__000",
+          "quote": "Date of birth:             1966-01-08"
+        },
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "DOB: 1966-01-08"
+        }
+      ]
+    },
+    {
+      "field": "product",
+      "value": "15yr Term Life",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__applicant_declaration_form.txt__000",
+          "quote": "Product:                   15yr Term Life"
+        }
+      ]
+    },
+    {
+      "field": "face_amount",
+      "value": "500000",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__applicant_declaration_form.txt__000",
+          "quote": "Face amount:               500000"
+        }
+      ]
+    },
+    {
+      "field": "stated_annual_income",
+      "value": "78000",
+      "basis": "stated",
+      "confidence": "medium",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__applicant_declaration_form.txt__000",
+          "quote": "Stated annual income:      78000"
+        }
+      ]
+    },
+    {
+      "field": "requested_rate_class",
+      "value": "Non-Tobacco / Preferred non-smoker",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__applicant_declaration_form.txt__001",
+          "quote": "Requested rate class: Non-Tobacco / Preferred non-smoker."
+        }
+      ]
+    },
+    {
+      "field": "tobacco_use",
+      "value": "Applicant declared non-use; APS notes former smoker who quit ~14 months ago; labs show positive cotinine (315 ng/mL) and elevated carboxyhemoglobin (6.8%)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__applicant_declaration_form.txt__000",
+          "quote": "Tobacco / nicotine use:    No \u2014 I do not use tobacco or nicotine products"
+        },
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "Former 1-ppd smoker; quit approx 14 months ago (recent quit)."
+        },
+        {
+          "chunk_id": "CASE-0004__labs_2025.csv__000",
+          "quote": "Cotinine,Positive,,2025-03-11"
+        },
+        {
+          "chunk_id": "CASE-0004__labs_2025.csv__000",
+          "quote": "Cotinine_level,315,ng/mL,2025-03-11"
+        }
+      ]
+    },
+    {
+      "field": "diagnosis",
+      "value": "Type 2 diabetes; hypertension; coronary artery disease with drug-eluting stent (2021)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__applicant_declaration_form.txt__000",
+          "quote": "Type 2 diabetes; high blood pressure; heart disease"
+        },
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "Established coronary artery disease. Drug-eluting stent placed 2021 (LAD)."
+        }
+      ]
+    },
+    {
+      "field": "hba1c",
+      "value": "7.8%",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "Most recent HbA1c 7.8% - suboptimal control."
+        },
+        {
+          "chunk_id": "CASE-0004__labs_2025.csv__000",
+          "quote": "HbA1c,7.8,%,2025-03-11"
+        }
+      ]
+    },
+    {
+      "field": "blood_pressure",
+      "value": "152/96 mmHg (office, 2025-03-11)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "BP (office) | 152/96 | 2025-03-11"
+        }
+      ]
+    },
+    {
+      "field": "bmi",
+      "value": "34.1 (obese)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "BMI 34.1 (obese)."
+        }
+      ]
+    },
+    {
+      "field": "lvef",
+      "value": "52%",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "LVEF | 52% | 2025-02-02"
+        }
+      ]
+    },
+    {
+      "field": "family_history",
+      "value": "Father myocardial infarction at age 52",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "Father myocardial infarction at age 52."
+        }
+      ]
+    },
+    {
+      "field": "medications",
+      "value": "Metformin, Glipizide, Metoprolol, Atorvastatin, Aspirin, Lisinopril, Nitroglycerin PRN",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__rx_history.pdf__000",
+          "quote": "Complex multi-drug cardiometabolic regimen."
+        }
+      ]
+    }
+  ],
+  "missing_information": [
+    {
+      "item": "Recent EKG or stress test results",
+      "why_it_matters": "Objective cardiac testing is needed to assess current status of coronary artery disease and stent stability beyond LVEF alone.",
+      "typically_found_in": "APS or cardiology specialist report"
+    },
+    {
+      "item": "Cardiology follow-up/progress notes since stent placement",
+      "why_it_matters": "Ongoing specialist assessment helps confirm long-term stability and any recurrent symptoms not fully captured in the APS summary.",
+      "typically_found_in": "Attending Physician Statement / specialist records"
+    },
+    {
+      "item": "Confirmed current smoking status / cessation verification",
+      "why_it_matters": "Positive cotinine and carboxyhemoglobin conflict with declared non-smoker status and requested preferred non-tobacco rate class, materially affecting risk classification.",
+      "typically_found_in": "Lab results, physician statement, or follow-up questionnaire"
+    },
+    {
+      "item": "Income verification documentation",
+      "why_it_matters": "Face amount relative to stated income should be corroborated to assess financial justification for coverage amount.",
+      "typically_found_in": "Financial underwriting documents (pay stubs, tax returns)"
+    }
+  ],
+  "risk_flags": [
+    {
+      "flag": "Coronary artery disease with prior stent",
+      "category": "medical",
+      "severity": "high",
+      "rationale": "History of established coronary artery disease with drug-eluting stent placement significantly elevates mortality risk despite current stability.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "Established coronary artery disease. Drug-eluting stent placed 2021 (LAD). Currently stable, no angina in last 12 months."
+        }
+      ]
+    },
+    {
+      "flag": "Type 2 diabetes with suboptimal control",
+      "category": "medical",
+      "severity": "high",
+      "rationale": "An HbA1c of 7.8% indicates poorly controlled diabetes, which increases long-term cardiovascular and mortality risk.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "Most recent HbA1c 7.8% - suboptimal control."
+        }
+      ]
+    },
+    {
+      "flag": "Uncontrolled hypertension",
+      "category": "medical",
+      "severity": "moderate",
+      "rationale": "Repeated elevated blood pressure readings despite therapy suggest inadequate hypertension control, a known cardiovascular risk factor.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "Hypertension: repeated elevated readings 148/94, 152/96 despite therapy."
+        }
+      ]
+    },
+    {
+      "flag": "Obesity",
+      "category": "medical",
+      "severity": "moderate",
+      "rationale": "A BMI of 34.1 compounds cardiometabolic risk alongside existing diabetes and heart disease.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "BMI 34.1 (obese)."
+        }
+      ]
+    },
+    {
+      "flag": "Tobacco use inconsistent with application declaration",
+      "category": "lifestyle",
+      "severity": "high",
+      "rationale": "Positive cotinine and elevated carboxyhemoglobin indicate likely current tobacco/nicotine use despite the applicant's non-smoker declaration and requested preferred non-tobacco rate class, a material misrepresentation risk.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__labs_2025.csv__000",
+          "quote": "Cotinine,Positive,,2025-03-11"
+        },
+        {
+          "chunk_id": "CASE-0004__labs_2025.csv__000",
+          "quote": "Carboxyhemoglobin,6.8,%,2025-03-11"
+        }
+      ]
+    },
+    {
+      "flag": "Family history of early cardiac death",
+      "category": "medical",
+      "severity": "moderate",
+      "rationale": "Paternal myocardial infarction at age 52 adds hereditary cardiovascular risk on top of applicant's own coronary disease.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "Father myocardial infarction at age 52."
+        }
+      ]
+    },
+    {
+      "flag": "Dyslipidemia",
+      "category": "medical",
+      "severity": "moderate",
+      "rationale": "Elevated LDL and triglycerides with low HDL indicate poor lipid control, adding to cardiovascular risk burden.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__labs_2025.csv__000",
+          "quote": "LDL,168,mg/dL,2025-03-11"
+        },
+        {
+          "chunk_id": "CASE-0004__labs_2025.csv__000",
+          "quote": "Triglycerides,290,mg/dL,2025-03-11"
+        }
+      ]
+    },
+    {
+      "flag": "PRN nitroglycerin use suggesting possible ongoing angina",
+      "category": "medical",
+      "severity": "moderate",
+      "rationale": "Active prescription for as-needed chest pain medication may indicate residual angina symptoms not fully reflected in the APS's 'no angina in last 12 months' statement.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__rx_history.pdf__000",
+          "quote": "Nitroglycerin 0.4 mg PRN       - as-needed chest pain"
+        }
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "description": "Applicant declared no tobacco/nicotine use and requested a preferred non-smoker rate class, but the APS notes a former smoking history quitting only ~14 months ago, and lab results show positive cotinine at 315 ng/mL and elevated carboxyhemoglobin, suggesting possible current tobacco use.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__applicant_declaration_form.txt__000",
+          "quote": "Tobacco / nicotine use:    No \u2014 I do not use tobacco or nicotine products"
+        },
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "Former 1-ppd smoker; quit approx 14 months ago (recent quit)."
+        },
+        {
+          "chunk_id": "CASE-0004__labs_2025.csv__000",
+          "quote": "Cotinine,Positive,,2025-03-11"
+        }
+      ]
+    },
+    {
+      "description": "APS states no angina in the last 12 months, but the prescription history includes an active PRN nitroglycerin prescription for as-needed chest pain, which could indicate ongoing symptomatic angina.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0004__aps_dr_okafor.docx__000",
+          "quote": "Currently stable, no angina in last 12 months."
+        },
+        {
+          "chunk_id": "CASE-0004__rx_history.pdf__000",
+          "quote": "Nitroglycerin 0.4 mg PRN       - as-needed chest pain"
+        }
+      ]
+    }
+  ],
+  "risk_score": 59,
+  "risk_band": "Very high",
+  "suggested_action": "Strong adverse risk; likely manual escalation or decline under many guidelines.",
+  "factor_scores": [
+    {
+      "factor": "Age",
+      "raw_score": 3,
+      "band_label": "Strongly adverse band (55-60)",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "DOB 1966-01-08 \u2192 age 60 as of evaluation date"
+    },
+    {
+      "factor": "Tobacco use",
+      "raw_score": 3,
+      "band_label": "Current smoker / nicotine user",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "Positive cotinine 315 ng/mL and elevated carboxyhemoglobin 6.8% despite declared non-smoker status"
+    },
+    {
+      "factor": "BMI / build",
+      "raw_score": 2,
+      "band_label": "Moderately outside preferred",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "BMI 34.1, obesity risk flag"
+    },
+    {
+      "factor": "Blood pressure",
+      "raw_score": 2,
+      "band_label": "Repeated elevated readings / moderate control issues",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "BP 152/96 despite therapy; uncontrolled hypertension flag"
+    },
+    {
+      "factor": "Diabetes",
+      "raw_score": 2,
+      "band_label": "Oral meds, stable",
+      "weight": 3,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "HbA1c 7.8% on Metformin/Glipizide; suboptimal control flag"
+    },
+    {
+      "factor": "Heart disease",
+      "raw_score": 2,
+      "band_label": "Established disease, stable",
+      "weight": 3,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "CAD with drug-eluting stent (2021), LVEF 52%, no confirmed recent event"
+    },
+    {
+      "factor": "Cancer history",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Respiratory disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Kidney/liver disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Mental health / substance use",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Medications",
+      "raw_score": 2,
+      "band_label": "Several high-risk meds / complex regimen",
+      "weight": 1,
+      "weighted_contribution": 2,
+      "evidence_status": "assessed",
+      "basis": "Metformin, Glipizide, Metoprolol, Atorvastatin, Aspirin, Lisinopril, Nitroglycerin PRN"
+    },
+    {
+      "factor": "Lab abnormalities",
+      "raw_score": 2,
+      "band_label": "Moderate abnormality",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "Dyslipidemia (elevated LDL/triglycerides, low HDL), elevated HbA1c, positive cotinine/carboxyhemoglobin"
+    },
+    {
+      "factor": "Recent hospitalization",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Family history",
+      "raw_score": 2,
+      "band_label": "Strong early family history",
+      "weight": 1,
+      "weighted_contribution": 2,
+      "evidence_status": "assessed",
+      "basis": "Father MI at age 52"
+    },
+    {
+      "factor": "Occupation / avocation",
+      "raw_score": 0,
+      "band_label": "Low hazard",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Driving record",
+      "raw_score": 0,
+      "band_label": "Clean",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Financial / application consistency",
+      "raw_score": 3,
+      "band_label": "Material under-disclosure / contradiction",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "Declared non-smoker/preferred rate class conflicts with positive cotinine, carboxyhemoglobin, and APS former smoker history"
+    },
+    {
+      "factor": "APS completeness",
+      "raw_score": 2,
+      "band_label": "Several missing details",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "Missing EKG/stress test results and cardiology follow-up notes since stent placement"
+    },
+    {
+      "factor": "Multiple comorbidities",
+      "raw_score": 3,
+      "band_label": "Several serious conditions",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "Coexisting CAD with stent, diabetes with suboptimal control, hypertension, obesity, dyslipidemia"
+    }
+  ],
+  "suggested_action_path": [
+    {
+      "action": "Request confirmed current smoking status and cessation verification (e.g., updated nicotine testing or applicant interview)",
+      "priority": "high",
+      "rationale": "Positive cotinine and carboxyhemoglobin levels conflict with the declared non-smoker status and requested preferred non-tobacco rate class, a material misrepresentation risk."
+    },
+    {
+      "action": "Obtain recent EKG or stress test results",
+      "priority": "high",
+      "rationale": "Objective cardiac testing is missing and needed to assess current coronary artery disease status and stent stability beyond LVEF alone."
+    },
+    {
+      "action": "Request cardiology follow-up/progress notes since stent placement, specifically addressing anginal symptoms",
+      "priority": "high",
+      "rationale": "The PRN nitroglycerin prescription conflicts with the APS statement of no angina in 12 months, and ongoing specialist notes would clarify true symptom status."
+    },
+    {
+      "action": "Obtain income verification documentation",
+      "priority": "medium",
+      "rationale": "The requested $500,000 face amount relative to stated income of $78,000 has not been corroborated, per the missing income verification item."
+    },
+    {
+      "action": "Review updated diabetes and blood pressure management records",
+      "priority": "medium",
+      "rationale": "HbA1c of 7.8% and repeated elevated blood pressure readings (152/96 mmHg) indicate suboptimal control of two major cardiovascular risk factors."
+    }
+  ],
+  "draft_rationale": {
+    "recommendation": "refer_to_senior_underwriter",
+    "rationale": "This case presents multiple high-severity medical risk flags (established coronary artery disease with stent, poorly controlled diabetes, and probable undisclosed tobacco use) compounded by moderate flags (uncontrolled hypertension, obesity, dyslipidemia, family history of early cardiac death). Two unresolved conflicts \u2014 the tobacco use discrepancy affecting the requested preferred non-tobacco rate class, and the angina/nitroglycerin discrepancy potentially indicating unreported symptomatic coronary disease \u2014 directly bear on both risk classification and rate class eligibility. Critical missing information (recent EKG/stress test, cardiology follow-up notes, confirmed smoking status, and income verification) prevents a confident assessment of current mortality risk. Given the complexity and materiality of these open issues, this draft leans toward referral to a senior underwriter for further review rather than a final approval or decline determination; a human underwriter should validate this direction once outstanding items are addressed."
+  },
+  "governance": {
+    "status": "draft - pending underwriter review",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "edit_history": [],
+    "unresolved_citation_issues": []
+  },
+  "_meta": {
+    "documents": [
+      {
+        "name": "applicant_declaration_form.txt",
+        "document_type": "Unclassified",
+        "extraction_status": "ok",
+        "chunk_count": 2
+      },
+      {
+        "name": "aps_dr_okafor.docx",
+        "document_type": "APS (Attending Physician Statement)",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      },
+      {
+        "name": "labs_2025.csv",
+        "document_type": "Lab results",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      },
+      {
+        "name": "rx_history.pdf",
+        "document_type": "Prescription history",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      }
+    ],
+    "chunk_count": 5,
+    "feature_extraction": {
+      "model": "anthropic/claude-sonnet-5",
+      "generated_at": "2026-08-18T07:10:41",
+      "unknown_sources": [],
+      "usage": {
+        "prompt_tokens": 3230,
+        "completion_tokens": 5132
+      }
+    },
+    "narrative_generation": {
+      "model": "anthropic/claude-sonnet-5",
+      "generated_at": "2026-08-18T07:10:56",
+      "usage": {
+        "prompt_tokens": 2296,
+        "completion_tokens": 1294
+      }
+    },
+    "scoring": {
+      "model": "anthropic/claude-sonnet-5",
+      "generated_at": "2026-08-18T07:11:23",
+      "framework_source": "\\\\xbiek31680dns.centralindia.cloudapp.azure.com\\Hackathon_Collab2\\Atul60176\\Project\\Underwriting_POC.xlsx",
+      "usage": {
+        "prompt_tokens": 4126,
+        "completion_tokens": 2855
+      }
+    }
+  }
+}

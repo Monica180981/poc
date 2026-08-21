@@ -1,0 +1,11 @@
+# Secrets — never commit
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Pipeline artifacts (regenerated)
+processed_text/*.json

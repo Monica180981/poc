@@ -1,0 +1,11 @@
+Applicant: David Brooks
+DOB: 1970-05-19
+Sex: Male
+Height: 5'9"  Weight: 210 lb
+Face amount: 2000000
+Product: 20yr Term Life
+Occupation: Small business owner
+Tobacco: Never used
+Stated annual income: 80000
+Medical conditions disclosed: None. Applicant reports no known medical problems.
+Medications disclosed: None.

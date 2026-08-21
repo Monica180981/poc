@@ -1,0 +1,188 @@
+{
+  "case_id": "CASE-0002",
+  "factor_scores": [
+    {
+      "factor": "Age",
+      "raw_score": 0,
+      "band_label": "Best-fit age band for product (20-30)",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "DOB 1994-03-15 \u2192 age 32, closest to prime 20-30 band"
+    },
+    {
+      "factor": "Tobacco use",
+      "raw_score": 0,
+      "band_label": "Never smoker / no nicotine",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "tobacco_use: never used, confirmed by negative cotinine"
+    },
+    {
+      "factor": "BMI / build",
+      "raw_score": 0,
+      "band_label": "Preferred range",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "BMI 24.0, within preferred range"
+    },
+    {
+      "factor": "Blood pressure",
+      "raw_score": 0,
+      "band_label": "Normal / controlled",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "BP 118/76, normal"
+    },
+    {
+      "factor": "Diabetes",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "HbA1c 5.1%, no diabetes disclosed"
+    },
+    {
+      "factor": "Heart disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No chronic conditions per APS; normal lipid panel"
+    },
+    {
+      "factor": "Cancer history",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No medical conditions disclosed"
+    },
+    {
+      "factor": "Respiratory disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No chronic conditions per APS"
+    },
+    {
+      "factor": "Kidney/liver disease",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "Creatinine 0.9 mg/dL, normal"
+    },
+    {
+      "factor": "Mental health / substance use",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Medications",
+      "raw_score": 0,
+      "band_label": "Few routine meds",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No chronic conditions disclosed, implying minimal medication use"
+    },
+    {
+      "factor": "Lab abnormalities",
+      "raw_score": 0,
+      "band_label": "Normal labs",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "HbA1c, LDL, HDL, cholesterol, creatinine all within normal ranges"
+    },
+    {
+      "factor": "Recent hospitalization",
+      "raw_score": 0,
+      "band_label": "None",
+      "weight": 3,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no evidence found"
+    },
+    {
+      "factor": "Family history",
+      "raw_score": 0,
+      "band_label": "None or irrelevant",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No family history of early cardiac events or cancer noted"
+    },
+    {
+      "factor": "Occupation / avocation",
+      "raw_score": 0,
+      "band_label": "Low hazard",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "Software engineer, low-risk occupation"
+    },
+    {
+      "factor": "Driving record",
+      "raw_score": 0,
+      "band_label": "Clean",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No violations or accidents in past 3 years"
+    },
+    {
+      "factor": "Financial / application consistency",
+      "raw_score": 0,
+      "band_label": "Fully consistent",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No conflicts identified in application data"
+    },
+    {
+      "factor": "APS completeness",
+      "raw_score": 1,
+      "band_label": "Small missing section",
+      "weight": 2,
+      "weighted_contribution": 2,
+      "evidence_status": "assessed",
+      "basis": "Missing quantified alcohol use and detailed extended family history"
+    },
+    {
+      "factor": "Multiple comorbidities",
+      "raw_score": 0,
+      "band_label": "None / isolated issue",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "No chronic conditions or comorbid findings"
+    }
+  ],
+  "total_score": 2,
+  "risk_band": "Low",
+  "suggested_action": "Likely standard / preferred, subject to normal checks.",
+  "_meta": {
+    "model": "anthropic/claude-sonnet-5",
+    "generated_at": "2026-08-20T11:23:48",
+    "framework_source": "\\\\xbiek31680dns.centralindia.cloudapp.azure.com\\Hackathon_Collab2\\Atul60176\\Project\\Underwriting_POC.xlsx",
+    "usage": {
+      "prompt_tokens": 3265,
+      "completion_tokens": 2767
+    }
+  }
+}

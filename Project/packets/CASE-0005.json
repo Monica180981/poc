@@ -1,0 +1,741 @@
+{
+  "case_id": "CASE-0005",
+  "product_line": "Term Life Insurance",
+  "generated_at": "2026-08-18T07:15:45",
+  "disclaimer": "This packet is an AI-assisted DRAFT for underwriter review. It is not an approval, decline, or binding decision.",
+  "summary": "Patricia Nolan, age 56, is applying for a $1,000,000 10-year term policy. The file shows a markedly elevated mortality risk profile, including a recent ST-elevation MI with reduced ejection fraction, active chemotherapy for invasive breast cancer, poorly controlled diabetes, severe oxygen-dependent COPD with continued smoking, stage 4 chronic kidney disease, and a recent heart-failure hospitalization. Supporting labs (elevated BNP, low hemoglobin, high creatinine) corroborate multi-system disease burden. There are also unresolved questions around income verification, cardiac and oncologic follow-up testing, and possible alcohol misuse reflected in recent driving violations. An advisor note independently flags concern about insurability given the applicant's health decline this year. Given the volume and severity of findings, this case requires careful senior-level review before any underwriting decision is finalized.",
+  "key_fields": [
+    {
+      "field": "applicant_name",
+      "value": "Patricia Nolan",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "Applicant: Patricia Nolan"
+        }
+      ]
+    },
+    {
+      "field": "date_of_birth",
+      "value": "1968-11-22",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "DOB: 1968-11-22"
+        }
+      ]
+    },
+    {
+      "field": "sex",
+      "value": "Female",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "Sex: Female"
+        }
+      ]
+    },
+    {
+      "field": "height_weight",
+      "value": "5'4\", 205 lb",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "Height: 5'4\"  Weight: 205 lb"
+        }
+      ]
+    },
+    {
+      "field": "face_amount",
+      "value": "1000000",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "Face amount: 1000000"
+        }
+      ]
+    },
+    {
+      "field": "product",
+      "value": "10yr Term Life",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "Product: 10yr Term Life"
+        }
+      ]
+    },
+    {
+      "field": "term_length",
+      "value": "10 years",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "Product: 10yr Term Life"
+        }
+      ]
+    },
+    {
+      "field": "tobacco_use",
+      "value": "Current smoker, ~1 pack/day; cotinine positive",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "Tobacco: Current smoker, ~1 pack/day"
+        },
+        {
+          "chunk_id": "CASE-0005__labs_2025.csv__000",
+          "quote": "Cotinine,Positive,,2025-06-15"
+        },
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "Continues to smoke ~1 ppd."
+        }
+      ]
+    },
+    {
+      "field": "stated_annual_income",
+      "value": "40000 (pension)",
+      "basis": "stated",
+      "confidence": "medium",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "Stated annual income: 40000 (pension)"
+        }
+      ]
+    },
+    {
+      "field": "occupation",
+      "value": "Retired",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "Occupation: Retired"
+        }
+      ]
+    },
+    {
+      "field": "diagnosis_cardiac",
+      "value": "ST-elevation myocardial infarction 2025-04, 2 stents placed, LVEF 34%",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "ST-elevation myocardial infarction 2025-04 (approx 3 months ago). Two stents placed. Ongoing cardiac rehab. Reduced LVEF 34%."
+        }
+      ]
+    },
+    {
+      "field": "diagnosis_oncology",
+      "value": "Invasive ductal breast carcinoma, diagnosed 2025-02, active chemotherapy",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "Invasive ductal breast carcinoma diagnosed 2025-02, currently receiving chemotherapy."
+        }
+      ]
+    },
+    {
+      "field": "diagnosis_diabetes",
+      "value": "Insulin-dependent type 2 diabetes, poorly controlled, HbA1c 9.6%",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "Insulin-dependent type 2 diabetes, poorly controlled. HbA1c 9.6%."
+        },
+        {
+          "chunk_id": "CASE-0005__labs_2025.csv__000",
+          "quote": "HbA1c,9.6,%,2025-06-15"
+        }
+      ]
+    },
+    {
+      "field": "diagnosis_respiratory",
+      "value": "Severe COPD, on home oxygen 2 L/min",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "Severe COPD, on home oxygen 2 L/min."
+        }
+      ]
+    },
+    {
+      "field": "diagnosis_renal",
+      "value": "Chronic kidney disease stage 4, eGFR 24",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "Chronic kidney disease stage 4 (eGFR 24). Nephrology following."
+        },
+        {
+          "chunk_id": "CASE-0005__labs_2025.csv__000",
+          "quote": "eGFR,24,mL/min,2025-06-15"
+        }
+      ]
+    },
+    {
+      "field": "recent_hospitalization",
+      "value": "Inpatient 2025-06 (6 days) for heart failure exacerbation",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "Inpatient 2025-06 (6 days) for heart failure exacerbation."
+        }
+      ]
+    },
+    {
+      "field": "medications",
+      "value": "Insulin glargine/aspart, carvedilol, lisinopril, furosemide, clopidogrel, aspirin, atorvastatin 80mg, tamoxifen/chemo agents, albuterol, tiotropium, prednisone, home oxygen",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__rx_history.pdf__000",
+          "quote": "Very heavy regimen with active complications across multiple systems."
+        }
+      ]
+    },
+    {
+      "field": "lab_result_bnp",
+      "value": "1850 pg/mL",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__labs_2025.csv__000",
+          "quote": "BNP,1850,pg/mL,2025-06-15"
+        }
+      ]
+    },
+    {
+      "field": "lab_result_hemoglobin",
+      "value": "9.8 g/dL",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__labs_2025.csv__000",
+          "quote": "Hemoglobin,9.8,g/dL,2025-06-15"
+        }
+      ]
+    },
+    {
+      "field": "lab_result_creatinine",
+      "value": "3.1 mg/dL",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__labs_2025.csv__000",
+          "quote": "Creatinine,3.1,mg/dL,2025-06-15"
+        }
+      ]
+    },
+    {
+      "field": "mvr_violations",
+      "value": "DUI (2023-11); failure to yield (2024-05); 1 at-fault alcohol-related accident (2023-11)",
+      "basis": "stated",
+      "confidence": "high",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__mvr_report.pdf__000",
+          "quote": "Violations (past 3 years): DUI (2023-11); failure to yield (2024-05)"
+        }
+      ]
+    }
+  ],
+  "missing_information": [
+    {
+      "item": "Recent EKG or cardiac stress test results",
+      "why_it_matters": "Additional objective cardiac function data would help assess post-MI mortality risk beyond LVEF alone.",
+      "typically_found_in": "Cardiology records / APS"
+    },
+    {
+      "item": "Oncology restaging results",
+      "why_it_matters": "Cancer prognosis and staging materially affect mortality risk assessment during active treatment.",
+      "typically_found_in": "Oncology records / APS"
+    },
+    {
+      "item": "Income verification (tax return or pension statement)",
+      "why_it_matters": "Verifying stated income helps assess face amount appropriateness relative to financial need.",
+      "typically_married_in": "Financial documentation",
+      "typically_found_in": "Financial documentation"
+    },
+    {
+      "item": "Substance use / alcohol treatment history",
+      "why_it_matters": "DUI and alcohol-related accident suggest possible alcohol use disorder relevant to mortality and driving risk.",
+      "typically_found_in": "Medical records / APS / personal history interview"
+    }
+  ],
+  "risk_flags": [
+    {
+      "flag": "Recent myocardial infarction with reduced LVEF",
+      "category": "medical",
+      "severity": "high",
+      "rationale": "A recent STEMI with stents and reduced ejection fraction (34%) indicates significant ongoing cardiac risk.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "ST-elevation myocardial infarction 2025-04 (approx 3 months ago). Two stents placed. Ongoing cardiac rehab. Reduced LVEF 34%."
+        }
+      ]
+    },
+    {
+      "flag": "Active breast cancer undergoing chemotherapy",
+      "category": "medical",
+      "severity": "high",
+      "rationale": "Active cancer treatment with pending prognosis represents substantial uncertainty and elevated mortality risk.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "Invasive ductal breast carcinoma diagnosed 2025-02, currently receiving chemotherapy. Active treatment, prognosis pending restaging."
+        }
+      ]
+    },
+    {
+      "flag": "Poorly controlled insulin-dependent diabetes",
+      "category": "medical",
+      "severity": "high",
+      "rationale": "An HbA1c of 9.6% indicates poor glycemic control, increasing risk of diabetes-related complications and mortality.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "Insulin-dependent type 2 diabetes, poorly controlled. HbA1c 9.6%."
+        }
+      ]
+    },
+    {
+      "flag": "Severe COPD requiring home oxygen with continued smoking",
+      "category": "medical",
+      "severity": "high",
+      "rationale": "Severe COPD on supplemental oxygen combined with continued tobacco use is associated with significantly increased respiratory mortality risk.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "Severe COPD, on home oxygen 2 L/min. Continues to smoke ~1 ppd."
+        }
+      ]
+    },
+    {
+      "flag": "Chronic kidney disease stage 4",
+      "category": "medical",
+      "severity": "high",
+      "rationale": "Stage 4 CKD with eGFR 24 indicates advanced renal impairment with elevated risk of progression and complications.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "Chronic kidney disease stage 4 (eGFR 24). Nephrology following."
+        }
+      ]
+    },
+    {
+      "flag": "Recent hospitalization for heart failure exacerbation",
+      "category": "medical",
+      "severity": "high",
+      "rationale": "A recent inpatient stay for heart failure exacerbation signals unstable cardiac status and elevated near-term mortality risk.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__aps_dr_reyes.docx__000",
+          "quote": "Inpatient 2025-06 (6 days) for heart failure exacerbation."
+        }
+      ]
+    },
+    {
+      "flag": "Elevated BNP",
+      "category": "medical",
+      "severity": "moderate",
+      "rationale": "Markedly elevated BNP (1850 pg/mL) is consistent with significant heart failure/cardiac strain.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__labs_2025.csv__000",
+          "quote": "BNP,1850,pg/mL,2025-06-15"
+        }
+      ]
+    },
+    {
+      "flag": "Low hemoglobin (anemia)",
+      "category": "medical",
+      "severity": "moderate",
+      "rationale": "Hemoglobin of 9.8 g/dL indicates anemia, which may reflect underlying chronic disease burden or treatment effects.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__labs_2025.csv__000",
+          "quote": "Hemoglobin,9.8,g/dL,2025-06-15"
+        }
+      ]
+    },
+    {
+      "flag": "Current tobacco use",
+      "category": "lifestyle",
+      "severity": "moderate",
+      "rationale": "Continued smoking, confirmed by positive cotinine, compounds existing cardiac and respiratory disease risk.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "Tobacco: Current smoker, ~1 pack/day"
+        },
+        {
+          "chunk_id": "CASE-0005__labs_2025.csv__000",
+          "quote": "Cotinine,Positive,,2025-06-15"
+        }
+      ]
+    },
+    {
+      "flag": "DUI and alcohol-related at-fault accident",
+      "category": "driving",
+      "severity": "moderate",
+      "rationale": "A DUI conviction and alcohol-related at-fault accident within the past three years suggest possible alcohol misuse and driving risk.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__mvr_report.pdf__000",
+          "quote": "Violations (past 3 years): DUI (2023-11); failure to yield (2024-05)"
+        }
+      ]
+    },
+    {
+      "flag": "High face amount relative to modest stated income",
+      "category": "financial",
+      "severity": "moderate",
+      "rationale": "A $1,000,000 face amount against a stated $40,000 pension income warrants review of financial justification.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "Face amount: 1000000"
+        },
+        {
+          "chunk_id": "CASE-0005__application.txt__000",
+          "quote": "Stated annual income: 40000 (pension)"
+        }
+      ]
+    },
+    {
+      "flag": "Advisor notes significant health decline and uncertain insurability",
+      "category": "other",
+      "severity": "moderate",
+      "rationale": "Advisor commentary flags a difficult health year and acknowledges coverage may not be available, indicating awareness of elevated risk.",
+      "sources": [
+        {
+          "chunk_id": "CASE-0005__advisor_email.txt__000",
+          "quote": "Client has had a very difficult year health-wise. She is aware coverage may not be available right now but wants us to submit anyway."
+        }
+      ]
+    }
+  ],
+  "conflicts": [],
+  "risk_score": 102,
+  "risk_band": "Very high",
+  "suggested_action": "Strong adverse risk; likely manual escalation or decline under many guidelines.",
+  "factor_scores": [
+    {
+      "factor": "Age",
+      "raw_score": 3,
+      "band_label": "Strongly adverse band (55-60)",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "DOB 1968-11-22, current age 57"
+    },
+    {
+      "factor": "Tobacco use",
+      "raw_score": 3,
+      "band_label": "Current smoker / nicotine user",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "tobacco_use: current smoker ~1 pack/day, cotinine positive"
+    },
+    {
+      "factor": "BMI / build",
+      "raw_score": 3,
+      "band_label": "Severely outside preferred",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "height/weight 5'4\" 205 lb, BMI ~35.2"
+    },
+    {
+      "factor": "Blood pressure",
+      "raw_score": 0,
+      "band_label": "Normal / controlled",
+      "weight": 2,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no explicit BP readings provided"
+    },
+    {
+      "factor": "Diabetes",
+      "raw_score": 3,
+      "band_label": "Insulin-dependent or poorly controlled",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "insulin-dependent type 2 diabetes, HbA1c 9.6%"
+    },
+    {
+      "factor": "Heart disease",
+      "raw_score": 3,
+      "band_label": "Recent event / significant disease",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "recent STEMI, stents, LVEF 34%, HF hospitalization, elevated BNP"
+    },
+    {
+      "factor": "Cancer history",
+      "raw_score": 3,
+      "band_label": "Active / recurrent / metastatic",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "active breast cancer undergoing chemotherapy"
+    },
+    {
+      "factor": "Respiratory disease",
+      "raw_score": 3,
+      "band_label": "Severe or oxygen-dependent",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "severe COPD on home oxygen 2L/min"
+    },
+    {
+      "factor": "Kidney/liver disease",
+      "raw_score": 3,
+      "band_label": "Advanced / progressive disease",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "CKD stage 4, eGFR 24, creatinine 3.1"
+    },
+    {
+      "factor": "Mental health / substance use",
+      "raw_score": 2,
+      "band_label": "Recent treatment or unstable",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "DUI and alcohol-related accident suggesting possible unstable alcohol use"
+    },
+    {
+      "factor": "Medications",
+      "raw_score": 3,
+      "band_label": "Very heavy regimen with complications",
+      "weight": 1,
+      "weighted_contribution": 3,
+      "evidence_status": "assessed",
+      "basis": "extensive medication list including insulin, chemo agents, oxygen, steroids, cardiac drugs"
+    },
+    {
+      "factor": "Lab abnormalities",
+      "raw_score": 3,
+      "band_label": "Severe abnormality",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "elevated BNP 1850, low hemoglobin 9.8, creatinine 3.1"
+    },
+    {
+      "factor": "Recent hospitalization",
+      "raw_score": 3,
+      "band_label": "Recent and serious",
+      "weight": 3,
+      "weighted_contribution": 9,
+      "evidence_status": "assessed",
+      "basis": "2025-06 6-day inpatient stay for heart failure exacerbation"
+    },
+    {
+      "factor": "Family history",
+      "raw_score": 0,
+      "band_label": "None or irrelevant",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "not_addressed",
+      "basis": "no family history data provided"
+    },
+    {
+      "factor": "Occupation / avocation",
+      "raw_score": 0,
+      "band_label": "Low hazard",
+      "weight": 1,
+      "weighted_contribution": 0,
+      "evidence_status": "assessed",
+      "basis": "occupation: retired"
+    },
+    {
+      "factor": "Driving record",
+      "raw_score": 3,
+      "band_label": "DUI / severe pattern",
+      "weight": 1,
+      "weighted_contribution": 3,
+      "evidence_status": "assessed",
+      "basis": "DUI, failure to yield, at-fault alcohol-related accident"
+    },
+    {
+      "factor": "Financial / application consistency",
+      "raw_score": 2,
+      "band_label": "Noticeable inconsistency",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "high face amount ($1M) relative to modest $40,000 pension income"
+    },
+    {
+      "factor": "APS completeness",
+      "raw_score": 2,
+      "band_label": "Several missing details",
+      "weight": 2,
+      "weighted_contribution": 4,
+      "evidence_status": "assessed",
+      "basis": "missing EKG/stress test, oncology restaging, income verification, substance use history"
+    },
+    {
+      "factor": "Multiple comorbidities",
+      "raw_score": 3,
+      "band_label": "Several serious conditions",
+      "weight": 2,
+      "weighted_contribution": 6,
+      "evidence_status": "assessed",
+      "basis": "concurrent MI, cancer, diabetes, COPD, CKD"
+    }
+  ],
+  "suggested_action_path": [
+    {
+      "action": "Obtain recent EKG or cardiac stress test results",
+      "priority": "high",
+      "rationale": "Missing objective cardiac function data is needed to fully assess post-MI mortality risk beyond the LVEF finding of 34%."
+    },
+    {
+      "action": "Request oncology restaging and treatment response summary",
+      "priority": "high",
+      "rationale": "Active chemotherapy for breast cancer with no restaging data creates substantial uncertainty in prognosis and mortality risk."
+    },
+    {
+      "action": "Request updated hospitalization/discharge summary for the June 2025 heart failure admission",
+      "priority": "high",
+      "rationale": "The recent inpatient stay for heart failure exacerbation signals possible cardiac instability that should be clarified before further review."
+    },
+    {
+      "action": "Request alcohol use / substance use history or treatment records",
+      "priority": "medium",
+      "rationale": "The DUI conviction and alcohol-related at-fault accident raise a flag for possible alcohol use disorder relevant to mortality and driving risk."
+    },
+    {
+      "action": "Verify stated income via tax return or pension statement",
+      "priority": "medium",
+      "rationale": "The requested $1,000,000 face amount appears large relative to the stated $40,000 pension income and warrants financial justification."
+    },
+    {
+      "action": "Escalate file to senior underwriter given cumulative high-severity flags",
+      "priority": "high",
+      "rationale": "Multiple concurrent high-severity medical flags (cardiac, oncologic, renal, respiratory, metabolic) exceed standard underwriting thresholds and warrant senior-level judgment."
+    }
+  ],
+  "draft_rationale": {
+    "recommendation": "refer_to_senior_underwriter",
+    "rationale": "This draft leans toward referral rather than a standard approve/decline because the case combines an unusually high number of high-severity medical risk flags \u2014 recent STEMI with reduced LVEF, active chemotherapy for breast cancer, poorly controlled diabetes, oxygen-dependent severe COPD with continued smoking, stage 4 CKD, and a recent heart-failure hospitalization \u2014 each of which independently would raise significant mortality concerns for a 10-year term policy. Supporting lab findings (elevated BNP, anemia, elevated creatinine) reinforce the clinical picture. At the same time, key missing information (cardiac stress testing, oncology restaging, income verification, and alcohol use history) prevents a fully informed decision, and the advisor's own note acknowledging uncertain insurability underscores the need for experienced judgment. Given the combination of severity and incompleteness, this file should be escalated for senior underwriting review rather than resolved through standard processing; a human underwriter must make the final call after obtaining the outstanding information."
+  },
+  "governance": {
+    "status": "draft - pending underwriter review",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "edit_history": [],
+    "unresolved_citation_issues": []
+  },
+  "_meta": {
+    "documents": [
+      {
+        "name": "advisor_email.txt",
+        "document_type": "Advisor / broker notes",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      },
+      {
+        "name": "application.txt",
+        "document_type": "Application",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      },
+      {
+        "name": "aps_dr_reyes.docx",
+        "document_type": "APS (Attending Physician Statement)",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      },
+      {
+        "name": "labs_2025.csv",
+        "document_type": "Lab results",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      },
+      {
+        "name": "mvr_report.pdf",
+        "document_type": "MVR (motor vehicle record)",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      },
+      {
+        "name": "rx_history.pdf",
+        "document_type": "Prescription history",
+        "extraction_status": "ok",
+        "chunk_count": 1
+      }
+    ],
+    "chunk_count": 6,
+    "feature_extraction": {
+      "model": "anthropic/claude-sonnet-5",
+      "generated_at": "2026-08-18T07:14:54",
+      "unknown_sources": [],
+      "usage": {
+        "prompt_tokens": 3079,
+        "completion_tokens": 5944
+      }
+    },
+    "narrative_generation": {
+      "model": "anthropic/claude-sonnet-5",
+      "generated_at": "2026-08-18T07:15:15",
+      "usage": {
+        "prompt_tokens": 2625,
+        "completion_tokens": 1837
+      }
+    },
+    "scoring": {
+      "model": "anthropic/claude-sonnet-5",
+      "generated_at": "2026-08-18T07:15:45",
+      "framework_source": "\\\\xbiek31680dns.centralindia.cloudapp.azure.com\\Hackathon_Collab2\\Atul60176\\Project\\Underwriting_POC.xlsx",
+      "usage": {
+        "prompt_tokens": 4455,
+        "completion_tokens": 3243
+      }
+    }
+  }
+}

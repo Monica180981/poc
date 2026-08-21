@@ -1,0 +1,11 @@
+Applicant: Angela Reed
+DOB: 1985-02-27
+Sex: Female
+Height: 5'6"  Weight: 150 lb
+Face amount: 300000
+Product: 20yr Term Life
+Occupation: Graphic designer
+Tobacco: Never used
+Stated annual income: 88000
+Medical conditions disclosed: None
+Note: Full medical records to follow; APS and labs not yet received.

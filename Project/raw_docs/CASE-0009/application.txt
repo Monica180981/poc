@@ -1,0 +1,11 @@
+Applicant: George Adler
+DOB: 1969-06-10
+Sex: Male
+Height: 5'11"  Weight: 224 lb
+Face amount: 1500000
+Product: 15yr Term Life
+Occupation: Commercial airline pilot; recreational scuba diver
+Tobacco: Former smoker, quit 12 years ago
+Stated annual income: 210000
+Medical conditions disclosed: Sleep apnea (CPAP); borderline sugar; acid reflux
+Medications disclosed: CPAP therapy; occasional omeprazole
